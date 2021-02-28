@@ -6,8 +6,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-<script src="content/js/home-three.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="/content/style/style.css"></link>
+<script src="/content/js/home-three.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="/content/style/style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" type="text/javascript"></script>
+
 
 </head>
 
@@ -41,7 +43,7 @@
 
   // Find the latest version by visiting https://unpkg.com/three.
 
-  import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js';
+  import * as THREE from 'three';
 
   var scene = new THREE.Scene();
             var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
