@@ -2,7 +2,7 @@ body {
     height: 100vh;
     padding: 0;
     margin: 0;
-    background: #4a2667;
+    background: #4a2667 !important;
     
   }
   
@@ -19,7 +19,7 @@ body {
     
   }
   svg.intro {
-    background: linear-gradient(135deg, #aa3bb1, #582a7e);
+    background: linear-gradient(135deg, #aa3bb1, #582a7e) !important;
     max-width: 800px;
     position: absolute;
     top: 50%;
