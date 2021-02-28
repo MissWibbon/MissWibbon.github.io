@@ -9,9 +9,9 @@ svg.intro {
   background: linear-gradient(135deg, #aa3bb1, #582a7e);
   max-width: 800px;
   position: absolute;
-  top: 50%;
+  top: 0%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -0%);
   box-shadow: 0 30px 50px -20px rgb(46, 6, 66);
 }
 svg.intro .text { 
