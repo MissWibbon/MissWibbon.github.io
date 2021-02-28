@@ -1,5 +1,11 @@
-function animateIntro() {
+$(function() {
     $('.intro').addClass('go');
-  }
-
-animateIntro()
+  
+    $('.reload').click(function() {
+      $('.intro').removeClass('go').delay(200).queue(function(next) {
+        $('.intro').addClass('go');
+        next();
+      });
+  
+    });
+  })
