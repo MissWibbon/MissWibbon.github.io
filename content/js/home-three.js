@@ -1,5 +1,5 @@
-$(function animateIntro() {
+function animateIntro() {
     $('.intro').addClass('go');
-  })
+  }
 
-  animateIntro()
+animateIntro()
