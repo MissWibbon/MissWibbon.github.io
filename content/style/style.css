@@ -49,9 +49,25 @@ svg.intro .text-stroke:nth-child(5) {
 svg.intro .text-stroke:nth-child(6) {
       animation-delay: 1.8s;
 }
+
+text[clip-path="url(#text2)"], 
+text[clip-path="url(#text1)"],
+.name{
+  font-family: 'Noto Serif', serif !important;
+}
+
+text[clip-path="url(#text3)"], text.ui-dev {
+  font-size: 70% !important;
+ 
+  
+}
+  
+
+
 @keyframes dash {
   100% {
     stroke-dashoffset: 0;
   }
 }
+
 

@@ -1,10 +1,5 @@
-$(function() {
+$(function animateIntro() {
     $('.intro').addClass('go');
-  
-      $('.intro').removeClass('go').delay(200).queue(function(next) {
-        $('.intro').addClass('go');
-        next();
-      });
-  
-    });
+    $('svg.intro .text').css('display', 'block')
   })
+  animateIntro()
