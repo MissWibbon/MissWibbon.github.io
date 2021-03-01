@@ -85,7 +85,7 @@ text[clip-path="url(#text3)"], text.ui-dev {
   .my-photo img {left: 0;}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 550px) {
   text[clip-path="url(#text2)"], text[clip-path="url(#text1)"], .name {font-size: 6vw;}
   text[clip-path="url(#text3)"], text.ui-dev {
     font-size: 100% !important;
