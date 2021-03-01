@@ -84,6 +84,14 @@ text[clip-path="url(#text3)"], text.ui-dev {
   .my-photo img {left: 0;}
 }
 
+@media screen and (max-width: 767px) {
+  .my-photo img {
+    width: 300vw;
+    margin: auto;
+    left: -100vw;
+    bottom: 0;
+  }
+}
 
 @keyframes dash {
   100% {
