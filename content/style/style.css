@@ -7,6 +7,7 @@ body {
   background-position: center;
   background-color: #1b5629;
     background-blend-mode: overlay;
+    background-attachment: fixed;
 }
 .my-photo {
   height: 100vh;
@@ -15,14 +16,14 @@ body {
 }
 .my-photo img {height: 100vh; margin: auto;    right: 0;    position: fixed;
  filter:contrast(1.2) grayscale(1);}
-
-svg.intro {
-  max-width: 800px;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, -0%);
-}
+ svg.intro {
+   max-width: 800px;
+   position: absolute;
+   top: 0%;
+   left: 50%;
+   transform: translate(-50%, -0%);
+  }
+  .head svg.intro {left: 0; transform: translate(0,0);}
 svg.intro .text { 
     display: none;
   }
@@ -85,6 +86,9 @@ text[clip-path="url(#text3)"], text.ui-dev {
 .mission .heading {font-size: 30px;}
 .wrapper {max-width: 1200px; margin: auto;}
 
+text[clip-path="url(#text4)"], text.my-mission {
+  font-size: 3.5vw !important;
+}
 
 @media screen and (max-width: 550px) {
   text[clip-path="url(#text2)"], text[clip-path="url(#text1)"], .name {font-size: 6vw;}
@@ -93,11 +97,13 @@ text[clip-path="url(#text3)"], text.ui-dev {
 }
   .my-photo img {
     height: auto;
-    width: 300vw;
+    width: 50vw;
     margin: auto;
-    left: -100vw;
     bottom: 0;
   }
+  text[clip-path="url(#text4)"], text.my-mission {
+    font-size: 7.5vw !important;
+}
 }
 
 @keyframes dash {
