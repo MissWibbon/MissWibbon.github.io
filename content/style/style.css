@@ -91,6 +91,7 @@ text[clip-path="url(#text3)"], text.ui-dev {
     font-size: 100% !important;
 }
   .my-photo img {
+    height: auto;
     width: 300vw;
     margin: auto;
     left: -100vw;
