@@ -14,7 +14,8 @@ body {
   padding: 0;
   margin: 0;
 }
-.my-photo img {height: 100vh; margin: auto;}
+.my-photo img {height: 100vh; margin: auto;    right: 0;
+  position: absolute;}
 
 svg.intro {
   max-width: 800px;
@@ -34,7 +35,7 @@ svg.intro .go .text {
 }
 svg.intro .text-stroke {
       fill: none;
-      stroke: #51256f;
+      stroke: #2b6217;
       stroke-width: 2.8px;
       stroke-dashoffset: -900;
       stroke-dasharray: 900;
@@ -49,7 +50,7 @@ svg.intro .text-stroke:nth-child(3) {
       animation-delay: .9s;
 }
 svg.intro .text-stroke-2 {
-      stroke: #f6bdfa;
+      stroke: #9eb695;
       animation-delay: 1.2s;
 }
 svg.intro .text-stroke:nth-child(5) {
