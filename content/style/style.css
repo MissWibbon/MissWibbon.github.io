@@ -7,14 +7,13 @@ body {
   background-position: center;
   background-color: #1b5629;
     background-blend-mode: overlay;
-    overflow: hidden;
 }
 .my-photo {
   height: 100vh;
   padding: 0;
   margin: 0;
 }
-.my-photo img {height: 100vh; margin: auto;    right: 0;
+.my-photo img {height: 100vh; margin: auto;    right: 0;    position: fixed;
   position: absolute; filter:contrast(1.2) grayscale(1);}
 
 svg.intro {
@@ -73,6 +72,13 @@ text[clip-path="url(#text3)"], text.ui-dev {
 }
   
 .greyscale {animation: grayScale 1s forwards;}
+
+
+.mission {
+  color: #9eb695;
+  font-family: 'Noto Serif', serif !important;
+
+}
 
 @keyframes dash {
   100% {
