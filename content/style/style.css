@@ -80,6 +80,11 @@ text[clip-path="url(#text3)"], text.ui-dev {
 
 }
 
+@media screen and (max-width: 1200px) {
+  .my-photo img {left: 0;}
+}
+
+
 @keyframes dash {
   100% {
     stroke-dashoffset: 0;
