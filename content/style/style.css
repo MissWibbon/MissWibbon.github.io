@@ -80,12 +80,16 @@ text[clip-path="url(#text3)"], text.ui-dev {
   padding: 4rem 2rem;
   background: rgba(0, 0, 0, 0.5)
 }
-
+.mission .heading {font-size: 30px;}
 @media screen and (max-width: 1200px) {
   .my-photo img {left: 0;}
 }
 
 @media screen and (max-width: 767px) {
+  text[clip-path="url(#text2)"], text[clip-path="url(#text1)"], .name {font-size: 6vw;}
+  text[clip-path="url(#text3)"], text.ui-dev {
+    font-size: 100% !important;
+}
   .my-photo img {
     width: 300vw;
     margin: auto;
