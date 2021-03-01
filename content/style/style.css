@@ -81,6 +81,7 @@ text[clip-path="url(#text3)"], text.ui-dev {
   background: rgba(0, 0, 0, 0.5)
 }
 .mission .heading {font-size: 30px;}
+.wrapper {max-width: 1200px; margin: auto;}
 @media screen and (max-width: 1200px) {
   .my-photo img {left: 0;}
 }
