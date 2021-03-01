@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 .my-photo img {height: 100vh; margin: auto;    right: 0;
-  position: absolute;}
+  position: absolute; filter:contrast(1.2) grayscale(1);}
 
 svg.intro {
   max-width: 800px;
