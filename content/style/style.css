@@ -77,7 +77,8 @@ text[clip-path="url(#text3)"], text.ui-dev {
 .mission {
   color: #9eb695;
   font-family: 'Noto Serif', serif !important;
-
+  padding: 4rem 2rem;
+  background: rgba(0, 0, 0, 0.5)
 }
 
 @media screen and (max-width: 1200px) {
