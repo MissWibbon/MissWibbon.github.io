@@ -166,7 +166,11 @@ text[clip-path="url(#text4)"], text.my-mission {
           }
         }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+  .mission ul {
+    width: 100%;
+    padding-left: 0;
+}
   text[clip-path="url(#text2)"], text[clip-path="url(#text1)"], .name {font-size: 6vw;}
   text[clip-path="url(#text3)"], text.ui-dev {
     font-size: 100% !important;
