@@ -89,7 +89,7 @@ text[clip-path="url(#text3)"], text.ui-dev {
   transform: translate(00%, -0%);}
 .mission .heading {font-size: 30px;}
 .mission ul {width: calc(100% - 300px);}
-.mission li {padding-bottom: 2rem; padding-top: 1rem; border-bottom: 1px dashed #9eb695; display: flex;}
+.mission li {align-items: center; padding-bottom: 2rem; padding-top: 1rem; border-bottom: 1px dashed #9eb695; display: flex;}
 .mission li::marker {content: '';}
 .wrapper {max-width: 1200px; margin: auto;}
 
@@ -117,13 +117,31 @@ text[clip-path="url(#text4)"], text.my-mission {
     overflow: hidden;
   }
 
+  .block1 {
+    width: 48.5%;
+    border: 1px solid #9eb695;
+    height: 50%;
+    display: inline-block;
+  }
+.block2 {
+  width: 49%;
+  border: 1px solid #9eb695;
+  height: 50%;
+  margin-left: auto;
+  display: inline-flex;
+}
+.block3 {
+  display: block;
+  width: 99%;
+  border: 1px solid #9eb695;
+  height: 46%;
 
-
+}
 .chat-message {text-align: center; margin: 0; padding: .25rem; font-family: 'Noto Serif', serif !important; font-size: 12px;}
   .responsive-animation {
-    display: flex;
+    padding: 1rem;
     height: 150px;
-    border: 1px solid;
+    border: 1px solid #9eb695;
     margin-left: 2rem;
     width: 100%;
   }
