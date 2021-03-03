@@ -7,6 +7,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <script src="/content/js/home-three.js" type="text/javascript"></script>
+
 <link rel="stylesheet" type="text/css" href="/content/style/style.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" type="text/javascript"></script>
 
@@ -17,53 +18,67 @@
 <body>
 	<div class="wrapper head">
 		<div class="intro-animation">
-		<svg class="intro" viewbox="0 0 200 86">
-		  <text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">Michelle</text>
-		  <text text-anchor="start" x="10" y="50" class="text text-stroke" clip-path="url(#text2)">Wuebben</text>
-		  <text text-anchor="start" x="10" y="70" class="text text-stroke" clip-path="url(#text3)" font-style="italic">UI Developer</text>
-		  <text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Michelle</text>
-		  <text text-anchor="start" x="10" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Wuebben</text>
-		  <text text-anchor="start" x="10" y="70" class="text text-stroke text-stroke-2" clip-path="url(#text3)" font-style="italic">UI Developer</text>
-		  <defs>
-			<clipPath id="text1">
-			  <text text-anchor="start" x="10" y="30" class="text name">Michelle</text>
-			</clipPath>
-			<clipPath id="text2">
-			  <text text-anchor="start" x="10" y="50" class="text name">Wuebben</text>
-			</clipPath>
-			<clipPath id="text3">
-			  <text text-anchor="start" x="10" y="70" class="text ui-dev" font-style="italic">UI Developer</text>
-			</clipPath>
-		</defs>
-		</svg>
-</div>
-
-		<div class="my-photo"><img src="/content/Michelle.png" alt="Michelle Wuebben"></div>
+			<svg class="intro" viewbox="0 0 200 86">
+			<text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text1)">Michelle</text>
+			<text text-anchor="start" x="10" y="50" class="text text-stroke" clip-path="url(#text2)">Wuebben</text>
+			<text text-anchor="start" x="10" y="70" class="text text-stroke" clip-path="url(#text3)" font-style="italic">UI Developer</text>
+			<text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Michelle</text>
+			<text text-anchor="start" x="10" y="50" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Wuebben</text>
+			<text text-anchor="start" x="10" y="70" class="text text-stroke text-stroke-2" clip-path="url(#text3)" font-style="italic">UI Developer</text>
+			<defs>
+				<clipPath id="text1">
+				<text text-anchor="start" x="10" y="30" class="text name">Michelle</text>
+				</clipPath>
+				<clipPath id="text2">
+				<text text-anchor="start" x="10" y="50" class="text name">Wuebben</text>
+				</clipPath>
+				<clipPath id="text3">
+				<text text-anchor="start" x="10" y="70" class="text ui-dev" font-style="italic">UI Developer</text>
+				</clipPath>
+			</defs>
+			</svg>
+		</div>
 	</div>
 	<section class="mission">
 		<div class="wrapper">
 			<div class="heading">
-				<svg class="intro" viewbox="0 0 200 86">
+				<svg class="intro" viewbox="0 0 200 46">
 					<text text-anchor="start" x="10" y="30" class="text text-stroke" clip-path="url(#text4)">My Mission</text>
 					<text text-anchor="start" x="10" y="30" class="text text-stroke text-stroke-2" clip-path="url(#text4)">My Mission</text>
 					<defs>
-					  <clipPath id="text4">
+						<clipPath id="text4">
 						<text text-anchor="start" x="10" y="30" class="text my-mission">My Mission</text>
 					  </clipPath>
 				  </defs>
-				  </svg></div>
-
-			<ul>
-				<li>Responsive design</li>
-				<li>Intuitive experience</li>
-				<li>Beautiful data</li>
-				<li>Accessible to everyone</li>
-			</ul>
+				</svg></div>
+				
+				<ul>
+					<li>Responsive design
+						<div class="responsive-animation">
+							<div class="block1"></div>
+							<div class="block2"></div>
+							<div class="block3"></div>		
+						</div>
+					</li>
+					<li>Intuitive experience</li>
+					<li>Beautiful data</li>
+					<li>Accessible to everyone</li>
+				</ul>
+			</div>
+		</section>
+		
+		<div class="chat-with-me">
+			<div class="my-photo">
+				<img src="/content/Michelle.png" alt="Michelle Wuebben">
+				<div class="notif">
+					<div class="bar">
+						<p class="chat-message"></p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</section>
-
 	<div class="scene"></div>
-	
+	<script src="/content/js/chat.js" type="text/javascript"></script>
 </body>
 
 </html>

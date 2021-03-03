@@ -10,15 +10,15 @@ body {
     background-attachment: fixed;
 }
 .my-photo {
-  height: 100vh;
   padding: 0;
   margin: 0;
 }
-.my-photo img {height: 100vh; margin: auto;    right: 0;    position: fixed;
+.my-photo img {    bottom: 0;
+  right: 0;
+  max-width: 300px;   position: fixed;
  filter:contrast(1.2) grayscale(1);}
  svg.intro {
    max-width: 800px;
-   position: absolute;
    top: 0%;
    left: 50%;
    transform: translate(-50%, -0%);
@@ -82,13 +82,71 @@ text[clip-path="url(#text3)"], text.ui-dev {
   background: linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5) 40%);
   position: relative;
 }
-.mission svg.intro {left: 35%;}
+.mission svg.intro {   max-width: 400px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  transform: translate(00%, -0%);}
 .mission .heading {font-size: 30px;}
+.mission ul {width: calc(100% - 300px);}
+.mission li {padding-bottom: 2rem; padding-top: 1rem; border-bottom: 1px dashed #9eb695; display: flex;}
+.mission li::marker {content: '';}
 .wrapper {max-width: 1200px; margin: auto;}
 
 text[clip-path="url(#text4)"], text.my-mission {
-  font-size: 3.5vw !important;
+  font-size: 20px !important;
 }
+
+
+.notif {
+  position: fixed;
+  bottom: 52vh;
+  right: 8vw;
+  width: 183px;
+  opacity: 0;
+}
+  .bar {
+    position: relative;
+    border-radius: 1000px;
+    background: #FFF;
+    height: auto;
+    line-height: 1;
+    width: 0;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+
+
+.chat-message {text-align: center; margin: 0; padding: .25rem; font-family: 'Noto Serif', serif !important; font-size: 12px;}
+  .responsive-animation {
+    display: flex;
+    height: 150px;
+    border: 1px solid;
+    margin-left: 2rem;
+    width: 100%;
+  }
+  .anim-start .notif {
+        opacity: 1;
+        transition-duration: .2s;
+        transition-delay: 1.6s;
+  }
+  .anim-start .bar {
+          width: 100%;
+          transition-duration: .6s;
+          transition-delay: 1.6s;
+        }
+
+
+        @media screen and (min-width: 1200px) {
+          .notif {
+            position: absolute;
+            bottom: 10vw;
+            right: 15vw;
+            width: 183px;
+          }
+        }
 
 @media screen and (max-width: 550px) {
   text[clip-path="url(#text2)"], text[clip-path="url(#text1)"], .name {font-size: 6vw;}
@@ -103,6 +161,9 @@ text[clip-path="url(#text4)"], text.my-mission {
   }
   text[clip-path="url(#text4)"], text.my-mission {
     font-size: 7.5vw !important;
+}
+text[clip-path="url(#text4)"], text.my-mission {
+  font-size: 3.5vw !important;
 }
 }
 
