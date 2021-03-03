@@ -167,6 +167,7 @@ text[clip-path="url(#text4)"], text.my-mission {
         }
 
 @media screen and (max-width: 650px) {
+  .mission svg.intro {left: -1rem;}
   .mission ul {
     width: 100%;
     padding-left: 0;
@@ -181,11 +182,14 @@ text[clip-path="url(#text4)"], text.my-mission {
     margin: auto;
     bottom: 0;
   }
-  text[clip-path="url(#text4)"], text.my-mission {
-    font-size: 7.5vw !important;
-}
+
 text[clip-path="url(#text4)"], text.my-mission {
-  font-size: 3.5vw !important;
+  font-size: 4.5vw !important;
+}
+.notif {
+  position: fixed;
+  bottom: 5vh;
+  right: 30vw;
 }
 }
 
