@@ -12,10 +12,22 @@ function getRandomInt(max) {
 
 
   var randomNum = getRandomInt(msgArray.length)
-console.log(randomNum)
 
-$('p.chat-message')[0].innerHTML = msgArray[randomNum] + " <a class='chat-btn' href='#chat'>Let's chat!</a>"
-
+$('p.chat-message')[0].innerHTML = msgArray[randomNum] + " <a class='chat-btn' id='chat'>Let's chat!</a>"
+$('#chat').bind("click", function () {
+  $('.anim-start .notif').css('transition-delay', '0s')
+  $('.bar').css({'border-radius': '5px', 'transition-delay': '0s', 'transition-duration': '0s'})
+  $('.notif').css('top', '4vh')
+  $('form').css("display", "block")
+  $('.chat-message').css('display', 'none')
+})
+$('#cancel-contact').bind("click", function () {
+  $('.bar').css({'border-radius': '1000px', 'animation-delay': '0s'})
+  $('.notif').css('top', '45vh')
+  $('form').css("display", "none")
+  $('.chat-message').css('display', 'block')
+  
+})
 
 
 jQuery(document).ready(function($) {
