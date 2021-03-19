@@ -108,7 +108,7 @@ text[clip-path="url(#text4)"], text.my-mission {
   .bar {
     position: relative;
     border-radius: 1000px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(0,0,0,0.3);
     color: white;
     height: auto;
     line-height: 1;
@@ -118,6 +118,10 @@ text[clip-path="url(#text4)"], text.my-mission {
     overflow: hidden;
   }
 
+  .notif .error {
+    font-size: 12px;
+    font-style: italic;
+  }
   .block1 {
     width: 48.5%;
     border: 1px solid #9eb695;
@@ -193,7 +197,7 @@ text[clip-path="url(#text4)"], text.my-mission {
   right: 30vw;
 }
 }
-#chat {white-space: nowrap; color:white; font-weight: 800; text-decoration: underline;}
+#chat {white-space: nowrap; color:white; font-weight: 800; text-decoration: underline; cursor: pointer;}
 #cancel-contact {
   background-color: #34990f;
   color: white;
@@ -205,28 +209,41 @@ text[clip-path="url(#text4)"], text.my-mission {
 form {display: none;}
 
 form {
-   max-width: 600px;
-   text-align: center;
-   margin: 15px auto;
-   margin-right: .25rem;
+  max-width: 600px;
+  text-align: center;
+  margin: 15px auto;
+  margin-right: .25rem;
 }
-  input, textarea {
-     border:0; outline:0;
-     padding: .5rem 1em;
-     border-radius: 8px;
-     display: block;
-     width: 87%;
-     margin-top: 1em;
-     font-family: 'Merriweather', sans-serif;
-     box-shadow: 0 1px 1px #1b5629;
-     resize: none;
-  }
+input, textarea, #input-submit {
+  border:0; outline:0;
+  padding: .5rem 1em;
+  border-radius: 8px;
+  display: block;
+  width: 87%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  box-shadow: 0 1px 1px #1b5629;
+  resize: none;
+  background-color: #06160a50; 
+  color:#34990f;
+}
+#loading {
+  position: relative;
+  max-width: 80px;
+  transform: scale(1.5);
+}
+input:-internal-autofill-selected {
+  box-shadow: 0 1px 1px #1b5629;
+  resize: none;
+  background-color: #06160a50 !important;
+  color:#34990f !important;
+}
    input:focus, textarea:focus {
        box-shadow:0 0px 2px #9eb695!important;
     }
   
   
-  #input-submit {
+  input[type="submit"] {
      color: white; 
      background: #34990f;
      cursor: pointer;

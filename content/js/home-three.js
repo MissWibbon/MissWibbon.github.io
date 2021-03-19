@@ -1,6 +1,6 @@
 $(function animateIntro() {
 	$('.head .intro').addClass('go');
-	$('svg.intro .text').css('display', 'block');
+	$('svg.intro .text').show();
 });
 
 $(window).on('scroll', function() {
