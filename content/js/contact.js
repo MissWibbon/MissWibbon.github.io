@@ -1,4 +1,4 @@
-import EMAIL_JS_ID from '/content/js/apikey.js';
+import EMAIL_JS_ID from '/content/js/apikeys.js';
 (function() {
 	// https://dashboard.emailjs.com/admin/integration
 	emailjs.init(EMAIL_JS_ID);
